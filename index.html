@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>لنا ❤️</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- خلفية ناعمة -->
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- شاشة القفل -->
+  <main id="lock" class="lock-wrap">
+    <div class="card glass">
+      <div class="badge">🔒</div>
+      <h1 class="title"> رسالة صغيرة…</h1>
+      <p class="sub">اكتبي الباسورد - ولو نسياه فهو اغلي اسم في الدنيا ✨</p>
+<p>دي هدية بسيطة حبيت افكرك بكل الى بنا وقد ايه انا مبسوط بالى وصلناله كل سنة وانتي عيدي وهديتي من ربنا </p>
+      <div class="row">
+        <input id="pass" type="password" placeholder="الباسورد" autocomplete="off" />
+        <button id="unlockBtn" class="btn">فتح</button>
+      </div>
+
+      <p id="err" class="err" aria-live="polite"></p>
+
+      <div class="hint">
+        <span>💡</span>
+        <small>لو الموسيقى ما اشتغلتش تلقائي: اضغطي زر “تشغيل الموسيقى” بعد الفتح.</small>
+      </div>
+    </div>
+  </main>
+
+  <!-- المحتوى بعد الفتح -->
+  <div id="site" class="site hidden">
+
+    <header class="hero glass">
+      <div class="hero-top">
+        <h2 class="hero-title">ذكرياتنا…</h2>
+        <p class="hero-sub">كل لحظة كانت بتكتب حكاية ❤️</p>
+
+        <div class="hero-actions">
+          <button id="playBtn" class="btn ghost">🎵 تشغيل الموسيقى</button>
+          <button id="muteBtn" class="btn ghost">🔇 كتم</button>
+        </div>
+      </div>
+
+      <!-- سلايدر صور -->
+      <section class="slider" aria-label="صور">
+        <div class="slides" id="slides"
+        
+        style="
+
+  width:100%;
+  height: 520px;
+  object-fit: cover;
+  flex: 0 0 100%;
+  user-select:none;
+}
+ ">
+          <!-- غيّر الصور داخل مجلد assets/images -->
+          <img src="assets/images/1.jpg" alt="ذكرى 1" style="
+
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  flex: 0 0 100%;
+  user-select:none;
+}
+ ">
+          
+          <img src="assets/images/ramy.jpg" alt="ذكرى 2"
+           style="
+
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  flex: 0 0 100%;
+  user-select:none;
+}
+ ">
+          <img src="assets/images/3.jpg" alt="ذكرى 3"
+           style="
+
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  flex: 0 0 100%;
+  user-select:none;
+}
+ ">
+        </div>
+
+       
+      </section>
+    </header>
+
+    <section class="section glass">
+      <h3 class="section-title">من يوم ما قررنا نكمل سوا</h3>
+<br>
+
+      <div class="timer" role="group" aria-label="عداد الزمن">
+        <div class="tbox"><div id="days" class="tval">0</div><div class="tlabel">يوم</div></div>
+        <div class="tbox"><div id="hours" class="tval">0</div><div class="tlabel">ساعة</div></div>
+        <div class="tbox"><div id="mins" class="tval">0</div><div class="tlabel">دقيقة</div></div>
+        <div class="tbox"><div id="secs" class="tval">0</div><div class="tlabel">ثانية</div></div>
+      </div>
+    </section>
+
+    <section class="section glass">
+  
+
+      <!-- الكلام بيظهر بالتدريج -->
+      <div class="lines">
+        <p class="reveal">في وسط زحمة الدنيا… وجودِك هو الهدوء اللي بيدّيني نفس.</p>
+        <p class="reveal">وكل مرة ببص للصور دي… بحس إننا اتخلقنا نكمّل بعض.</p>
+        <p class="reveal">مش محتاجين كتير… بس لحظاتنا سوا دايمًا “كتير”.</p>
+        <p class="reveal">بحبّك… وبختارك… كل يوم من جديد. ❤️</p>
+      </div>
+    </section>
+
+    <section class="section glass">
+
+      <div class="grid">
+        <!-- غيّر الصور داخل مجلد assets/images -->
+        <figure class="ph reveal"><img src="assets/images/4.jpg" alt="صورة 1"></figure>
+        <figure class="ph reveal"><img src="assets/images/5.jpg" alt="صورة 2"></figure>
+        <figure class="ph reveal"><img src="assets/images/6.jpg" alt="صورة 3"></figure>
+        <figure class="ph reveal"><img src="assets/images/7.jpg" alt="صورة 4"></figure>
+        <figure class="ph reveal"><img src="assets/images/8.jpg" alt="صورة 5"></figure>
+        <figure class="ph reveal"><img src="assets/images/9.jpg" alt="صورة 6"></figure>
+
+      </div>
+    </section>
+
+
+<!-- ====== سلايدر بولارويد جديد (مختلف عن اللي فوق) ====== -->
+<section class="section glass polaroidSection">
+  <div class="polaroidHead">
+    <div>
+      <h3 class="section-title reveal">لحظات مش بتتكرر 🤍</h3>
+      <p class="section-sub reveal">
+        كل صورة هنا… بتفكرني قد ايه انا حياتي جميلة بسببك.
+      </p>
+    </div>
+
+    <div class="polaroidActions reveal">
+      <button class="btn ghost small" id="pPrev">⬅️</button>
+      <button class="btn ghost small" id="pNext">➡️</button>
+    </div>
+  </div>
+
+  <div class="polaroidWrap">
+    <div class="polaroidTrack" id="pTrack">
+        
+        <div class="pCard reveal">
+        <img src="assets/images/Clon.jpg" alt="لحظة 2">
+        <div class="pText">
+          <h4>واحنا بنقي لبس فاتحتنا</h4>
+          <p>كان احساس حلو واحنا بنشتري حاجة فرحنا</p>
+        </div>
+      </div>
+
+      
+      <div class="pCard reveal">
+        <img src="assets/images/fatha.jpg" alt="لحظة 1">
+        <div class="pText">
+          <h4>أول فرحة</h4>
+          <p>من يومها وأنا حاسس إن كل اللي جاي أحلى.</p>
+        </div>
+      </div>
+
+      
+      <div class="pCard reveal">
+        <img src="assets/images/Farhnaa.jpg" alt="لحظة 3">
+        <div class="pText">
+          <h4>أمان</h4>
+          <p>وبقينا قدام الدنيا كلها بنتصور والكل بيتفرج علينا وفرحان</p>
+        </div>
+      </div>
+
+      <div class="pCard reveal">
+        <img src="assets/images/bo.jpg" alt="لحظة 4">
+        <div class="pText">
+          <h4>وعد</h4>
+          <p>بختارك كل يوم… وبحبك أكتر من اليوم اللي قبله.</p>
+        </div>
+      </div>
+
+      <div class="pCard reveal">
+        <img src="assets/images/de7.jpg" alt="لحظة 5">
+        <div class="pText">
+          <h4>ضحكة</h4>
+          <p>ضحكتك بتخلّي كل حاجة أبسط… وأجمل.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="polaroidHint reveal">
+    اسحبي الصور بإيدك ✨ أو استخدمي السهمين
+  </div>
+</section>
+
+<style>
+  /* ===== سلايدر بولارويد ===== */
+  .polaroidSection{
+    padding: 18px 16px;
+    overflow:hidden;
+  }
+
+  .polaroidHead{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+
+  .polaroidActions{
+    display:flex;
+    gap:10px;
+  }
+
+  /* مهم جدًا: نخلي اتجاه السلايدر LTR عشان RTL ما يلخبطش */
+  .polaroidWrap{
+    direction:ltr;
+    margin-top: 14px;
+    overflow:hidden;
+  }
+
+  .polaroidTrack{
+    display:flex;
+    gap:14px;
+    overflow-x:auto;
+    padding: 8px 6px 16px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .polaroidTrack::-webkit-scrollbar{
+    height: 10px;
+  }
+  .polaroidTrack::-webkit-scrollbar-thumb{
+    background: rgba(255,255,255,.16);
+    border-radius: 999px;
+  }
+
+  .pCard{
+    flex: 0 0 auto;
+    width: min(340px, 80vw);
+    scroll-snap-align: center;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(0,0,0,.18);
+    overflow:hidden;
+    box-shadow: 0 16px 45px rgba(0,0,0,.35);
+    transform: rotate(-.5deg);
+    transition: transform .3s ease;
+  }
+
+  .pCard:nth-child(2n){
+    transform: rotate(.6deg);
+  }
+
+  .pCard:hover{
+    transform: scale(1.02);
+  }
+
+  .pCard img{
+    width:100%;
+    height: 260px;
+    object-fit: cover;
+    display:block;
+  }
+
+  .pText{
+    padding: 12px 12px 14px;
+    direction:rtl; /* نخلي النص عربي */
+    text-align:right;
+  }
+
+  .pText h4{
+    margin: 0 0 6px;
+    font-size: 16px;
+  }
+
+  .pText p{
+    margin: 0;
+    color: rgba(255,255,255,.82);
+    line-height: 1.8;
+    font-size: 14px;
+  }
+
+  .polaroidHint{
+    margin-top: 6px;
+    color: rgba(255,255,255,.65);
+    font-size: 13px;
+    text-align:center;
+  }
+</style>
+
+<script>
+  // ===== سلايدر بولارويد (RTL FIXED) =====
+  const pTrack = document.getElementById("pTrack");
+  const pPrev = document.getElementById("pPrev");
+  const pNext = document.getElementById("pNext");
+
+  function pScrollByCards(dir = 1){
+    if (!pTrack) return;
+    const card = pTrack.querySelector(".pCard");
+    if (!card) return;
+
+    const gap = 14;
+    const step = card.getBoundingClientRect().width + gap;
+
+    pTrack.scrollBy({ left: dir * step, behavior: "smooth" });
+  }
+
+  pPrev?.addEventListener("click", () => pScrollByCards(-1));
+  pNext?.addEventListener("click", () => pScrollByCards(1));
+
+  // Auto slide
+  let pAuto = setInterval(() => pScrollByCards(1), 5000);
+
+  // stop auto on interaction
+  ["pointerdown", "touchstart", "mouseenter", "wheel"].forEach(ev => {
+    pTrack?.addEventListener(ev, () => clearInterval(pAuto), { once: true });
+  });
+</script>
+<!-- ====== نهاية السلايدر الجديد ====== -->
+
+
+
+ <br>
+
+
+    <footer class="footer">
+        
+       
+    <div class="glass footer-inner" style="display:flex; justify-content:center; align-items:center; text-align:center; padding:20px; color:rgba(255,255,255,.85);">
+  <span>كل سنة وانتى اجمل واحلي حاجة حصلت في حياتي وكل سنة وانتى معايا وملكي وكل عيد وانتي عيدي ❤️</span>
+</div>
+
+      
+      <br>
+      
+        
+      <div class="glass footer-inner">
+        <span>Made with ❤️ Ramy </span>
+        <button id="lockAgain" class="btn ghost small">قفل</button>
+      </div>
+    </footer>
+
+    <!-- ملف الصوت -->
+    
+    <audio id="song" src="https://h.top4top.io/m_3695ysh741.mp3" preload="auto" loop></audio>
+    
+  </div>
+
+  <script >
+      
+      
+      
+      // ===== إعدادات =====
+const PASSWORD = "sasa";
+
+// 23 يناير 2025
+// ملحوظة: الشهور بتبدأ من 0 → يناير = 0
+const startDate = new Date(2025, 0, 23, 0, 0, 0);
+
+const lock = document.getElementById("lock");
+const site = document.getElementById("site");
+const pass = document.getElementById("pass");
+const unlockBtn = document.getElementById("unlockBtn");
+const err = document.getElementById("err");
+
+const song = document.getElementById("song");
+const playBtn = document.getElementById("playBtn");
+const muteBtn = document.getElementById("muteBtn");
+const lockAgain = document.getElementById("lockAgain");
+
+// ===== فتح/قفل =====
+function showSite() {
+  lock.classList.add("hidden");
+  site.classList.remove("hidden");
+  localStorage.setItem("mem_unlocked", "1");
+
+  song.play().catch(() => {});
+}
+
+function showLock() {
+  site.classList.add("hidden");
+  lock.classList.remove("hidden");
+  localStorage.removeItem("mem_unlocked");
+  try { song.pause(); } catch {}
+}
+
+function tryUnlock() {
+  const v = (pass.value || "").trim();
+  if (v === PASSWORD) {
+    err.textContent = "";
+    showSite();
+  } else {
+    err.textContent = "الباسورد غلط… جرّبي تاني 🤍";
+  }
+}
+
+unlockBtn.addEventListener("click", tryUnlock);
+pass.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") tryUnlock();
+});
+
+lockAgain?.addEventListener("click", showLock);
+
+if (localStorage.getItem("mem_unlocked") === "1") {
+  showSite();
+}
+
+// ===== موسيقى =====
+playBtn?.addEventListener("click", async () => {
+  try {
+    await song.play();
+  } catch {}
+});
+
+muteBtn?.addEventListener("click", () => {
+  song.muted = !song.muted;
+  muteBtn.textContent = song.muted ? "🔈 إلغاء الكتم" : "🔇 كتم";
+});
+
+// ===== تايمر متحرك =====
+const dEl = document.getElementById("days");
+const hEl = document.getElementById("hours");
+const mEl = document.getElementById("mins");
+const sEl = document.getElementById("secs");
+
+function pad(n){
+  return n.toString().padStart(2, "0");
+}
+
+function updateTimer() {
+  const now = new Date();
+  let diff = now - startDate;
+
+  if (diff < 0) diff = 0;
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const mins = Math.floor((diff / (1000 * 60)) % 60);
+  const secs = Math.floor((diff / 1000) % 60);
+
+  dEl.textContent = days;
+  hEl.textContent = pad(hours);
+  mEl.textContent = pad(mins);
+  sEl.textContent = pad(secs);
+}
+
+updateTimer();
+setInterval(updateTimer, 1000);
+
+// ===== سلايدر =====
+const slides = document.getElementById("slides");
+const dots = Array.from(document.querySelectorAll(".dot"));
+let idx = 0;
+
+function go(i){
+  idx = i;
+  slides.style.transform = `translateX(${idx * 100}%)`;
+  dots.forEach((d, di)=> d.classList.toggle("active", di === idx));
+}
+
+dots.forEach(d => {
+  d.addEventListener("click", () => go(Number(d.dataset.i)));
+});
+
+setInterval(() => {
+  const next = (idx + 1) % dots.length;
+  go(next);
+}, 4500);
+
+// ===== ظهور تدريجي مع الاسكرول =====
+const revealEls = Array.from(document.querySelectorAll(".reveal"));
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((e) => {
+    if (e.isIntersecting) e.target.classList.add("show");
+  });
+}, { threshold: 0.12 });
+
+revealEls.forEach(el => io.observe(el));
+
+      
+      
+      
+  </script>
+</body>
+</html>
